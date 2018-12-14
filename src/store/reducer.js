@@ -5,7 +5,7 @@ const initState = {
 const reducer = (state = initState, action) => {
   const newState = { ...state };
 
-  if (action.type === "ADD") {
+  if (action.type === "ADD_SYNC_UP") {
     newState.age += action.value;
   }
   if (action.type === "SUBTRACT") {
